@@ -1,9 +1,9 @@
 package pl.swierzewski.domain.numbergenerator;
 
-import java.util.Set;
+import pl.swierzewski.domain.numbergenerator.dto.SixRandomNumbersDto;
 
 public interface RandomNumberGenerable {
 
-    Set<Integer> generateSixRandomNumbers();
+    SixRandomNumbersDto generateSixRandomNumbers();
 }
 

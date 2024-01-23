@@ -1,5 +1,7 @@
 package pl.swierzewski.domain.numbergenerator;
 
+import pl.swierzewski.domain.numbergenerator.dto.SixRandomNumbersDto;
+
 import java.util.Set;
 
 
@@ -16,7 +18,9 @@ public class WinningNumberGeneratorTestImpl implements RandomNumberGenerable {
     }
 
     @Override
-    public Set<Integer> generateSixRandomNumbers() {
-        return generatedNumbers;
+    public SixRandomNumbersDto generateSixRandomNumbers() {
+        return SixRandomNumbersDto.builder()
+                .numbers(generatedNumbers)
+                .build();
     }
 }
