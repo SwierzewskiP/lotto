@@ -4,6 +4,6 @@ import pl.lotto.domain.numbergenerator.dto.SixRandomNumbersDto;
 
 public interface RandomNumberGenerable {
 
-    SixRandomNumbersDto generateSixRandomNumbers();
+    SixRandomNumbersDto generateSixRandomNumbers(int count, int lowerBand, int upperBand);
 }
 
